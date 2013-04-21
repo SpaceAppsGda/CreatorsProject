@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+       
+	<title>Earth APP</title>
+
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0a4.1/jquery.mobile-1.0a4.1.min.css" />
+	<link href="mobile.css" rel="stylesheet" type="text/css" />
+	<script src="http://code.jquery.com/jquery-1.5.2.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.0a4.1/jquery.mobile-1.0a4.1.min.js"></script>
+	<!-- -----------------------------------------CSS start----------------------------------------------- -->
+	
+        <style>
+					
+		section {
+                width: 100%;
+                top: 85px;
+                }
+				
+		</style>
+		
+	<!-- --------------------------------------------------------CSS end--------------------------------------------------------------------- -->
+	
+	</head>
+	
+	<body>	
+		
+		<!-- --------------------------------------------------------INDEX Inicio--------------------------------------------------------------------- -->
+	
+		<div class="app">
+            <h1 style="font-family:Times New Roman;font-size:30px;"></h1>
+            <script type="text/javascript" src="cordova-2.5.0rc1.js"></script>
+            <script type="text/javascript" src="js/index.js"></script>
+            <script type="text/javascript" src="js/WikitudePlugin.js"></script>
+            <script type="text/javascript">
+                app.initialize();
+                
+                function loadAR(){             	
+                    app.loadARchitectWorld();
+				}
+                			
+				
+				function showAR(){
+					WikitudePlugin.show();
+				}
+				
+                
+				</script>
+            <div id="deviceready" class="blink">
+                <p class="event listening"></p>
+                <center><p class="event received"></p></center>
+            </div>
+        </div> 	
+		
+		<!-- --------------------------------------------------------INDEX Fin--------------------------------------------------------------------- -->
+					
+			<section>
+		<!-- Home -->
+		<div data-role="page" id="home">
+						 <div data-role="content">
+							<p><center>
+							<img width="300" height="112" src="banner.png">
+							</center></p>
+						</div>
+				
+						<div data-role="content">
+								<button onclick="loadAR();"><img src="img/icon/full.png" alt="Full Site" class="ui-li-icon">Realidad Aumentada</button>
+													
+						</div>	<!-- end content -->			
+			</section>
+		</div><!-- end page -->	
+				
+	</body>
+</html>
